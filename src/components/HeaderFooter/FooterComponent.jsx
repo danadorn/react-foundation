@@ -12,7 +12,7 @@ import {
 } from "flowbite-react";
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 
-export function FooterComponent() {
+export default function FooterComponent() {
   return (
     <Footer container>
       <div className="w-full">
