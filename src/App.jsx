@@ -215,7 +215,8 @@ import FeaturePage from './pages/FeaturePage';
 import MarketplacePage from './pages/MarketplacePage';
 import ProductPage from './pages/ProductPage';
 import FormComponent from './components/FormComponent/FormComponent';
-import ProductComponent from './components/products/ProductComponent';
+import CreateProductComponent from './components/FormComponent/CreateProductComponent';
+import ProductDetailPage from './pages/ProductDetailPage';
 
 export default function App() {
   return (
@@ -227,7 +228,9 @@ export default function App() {
         <Route path="/marketplacepage" element={<MarketplacePage />} />
         <Route path="/productpage" element={<ProductPage />} />
         <Route path="/form" element={<FormComponent />} />
-      </Routes>
+        <Route path="/products" element={<ProductPage />} />
+        <Route path="/product/:id" element={<ProductDetailPage />} />
+        <Route path="/createproduct" element={<CreateProductComponent />} />      </Routes>
     </BrowserRouter>
 
     
